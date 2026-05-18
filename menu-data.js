@@ -3,7 +3,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "bread",
             icon: "fa-bread-slice",
-            image: "images/opening.jpg",
+            image: "images/bread.jpg",
             name: { en: "Bread", vi: "Banh mi va banh nuong" },
             intro: { en: "Fresh loaves, rolls, croissants, doughnuts and bakery favourites for the whole day.", vi: "Banh mi, banh cuon, croissant, donut va cac mon banh moi ra lo moi ngay." },
             items: [
@@ -13,7 +13,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "wraps-focaccia",
             icon: "fa-utensils",
-            image: "images/plateu.jpg",
+            image: "images/sandwiches.png",
             name: { en: "Wraps & Focaccia", vi: "Wrap va focaccia" },
             intro: { en: "Made-to-go lunches with fresh fillings, soft wraps and toasted focaccia.", vi: "Bua trua tien loi voi nhan tuoi, wrap mem va focaccia nuong am." },
             items: [["Chicken And Avocado Wrap", "$14.50"], ["Chicken Focaccia", "$15.60"], ["Ham And Avocado Wrap", "$14.50"], ["Ham Focaccia", "$15.60"]]
@@ -21,7 +21,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "banh-mi",
             icon: "fa-pepper-hot",
-            image: "images/banh_mi.jpg",
+            image: "images/banh mi.jpeg",
             name: { en: "Vietnamese Banh Mi", vi: "Banh mi Viet Nam" },
             intro: { en: "Crispy rolls, savoury meats, pickled veg, herbs and the house sauces people come back for.", vi: "Banh mi gion, thit dam da, do chua, rau thom va sot nha lam." },
             items: [["Roasted Pork Banh Mi", "$15.60"], ["Lemongrass Chicken Banh Mi", "$14.50"], ["BBQ Pork Banh Mi", "$14.50"], ["Grilled Chicken Banh Mi", "$14.50"], ["Vietnamese Signature Banh Mi", "$15.60"], ["Grilled Pork Banh Mi", "$14.50"], ["Fried Rice", "$14.50"], ["Fried Noodles", "$14.50"]]
@@ -29,7 +29,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "vermicelli-salad-bowls",
             icon: "fa-bowl-food",
-            image: "images/banh_mi.jpg",
+            image: "images/vermicelli bowl.avif",
             name: { en: "Vermicelli Salad Bowls", vi: "Bun salad" },
             intro: { en: "Fresh noodle bowls with grilled meats, salad, herbs and bright Vietnamese flavour.", vi: "To bun tuoi voi thit nuong, rau, rau thom va huong vi Viet Nam tuoi mat." },
             items: [["Grilled Pork Noodle Salad Bowl", "$17.50"], ["Lemongrass Chicken Noodle Salad Bowl", "$17.50"], ["Grilled Chicken Noodle Salad Bowl", "$17.50"], ["Combination Noodle Salad Bowl", "$17.50"]]
@@ -37,7 +37,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "rice-paper-rolls",
             icon: "fa-leaf",
-            image: "images/plateu.jpg",
+            image: "images/rice paper.webp",
             name: { en: "Rice Paper Rolls", vi: "Goi cuon" },
             intro: { en: "Light, fresh rice paper rolls packed with protein, herbs and crisp vegetables.", vi: "Goi cuon nhe bung voi thit, rau thom va rau tuoi gion." },
             items: [["Chicken & Avocado Rice Paper Rolls", "$11.00"], ["Pork And Prawns Rice Paper Rolls", "$11.00"], ["Lemongrass Chicken Rice Paper Rolls", "$11.00"], ["BBQ Pork Rice Paper Rolls", "$11.00"], ["Grilled Chicken Rice Paper Rolls", "$11.00"], ["Grilled Pork Rice Paper Rolls", "$11.00"]]
@@ -45,7 +45,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "salad-rolls",
             icon: "fa-seedling",
-            image: "images/opening.jpg",
+            image: "images/pastry array.png",
             name: { en: "Salad Rolls", vi: "Banh mi salad" },
             intro: { en: "Classic salad rolls made fresh with ham or chicken.", vi: "Banh mi salad lam moi voi ham hoac ga." },
             items: [["Ham Salad Roll", "$13.00"], ["Chicken Salad Roll", "$13.00"]]
@@ -53,7 +53,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "sandwiches",
             icon: "fa-burger",
-            image: "images/opening.jpg",
+            image: "images/wraps.webp",
             name: { en: "Sandwiches", vi: "Sandwich" },
             intro: { en: "Simple, fresh sandwiches for an easy bakery lunch.", vi: "Sandwich tuoi ngon, don gian cho bua trua nhanh." },
             items: [["Chicken, Cheese And Lettuce Sandwich", "$9.80"], ["Eggs And Lettuce Sandwich", "$9.80"], ["Ham, Cheese And Tomato Sandwich", "$9.80"]]
@@ -61,7 +61,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "hot-food",
             icon: "fa-fire-flame-curved",
-            image: "images/plateu.jpg",
+            image: "images/pie array.png",
             name: { en: "Hot Food", vi: "Mon nong" },
             intro: { en: "Pies, sausage rolls, quiche, spring rolls and hot bakery classics.", vi: "Pie, sausage roll, quiche, cha gio va cac mon nong quen thuoc." },
             items: [["Quiche Lorraine", "$8.50"], ["Smokey Dog", "$7.80"], ["Spinach And Feta", "$7.80"], ["Chunky Steak Pepper Pie", "$8.90"], ["Chunky Beef Curry Pie", "$8.90"], ["Mince & Veggie Pasty", "$7.80"], ["Chunky Steak Cheese Pie", "$8.90"], ["Roasted Pork Gravy Roll", "$13.00"], ["Vietnamese Pork Meatball Skewer", "$6.00"], ["Mini Quiche", "$4.50"], ["Curry Beef Minced", "$8.80"], ["Beef Minced And Cheese", "$8.80"], ["Steak, Tomato And Onion Pie", "$8.90"], ["Classic Beef Minced Pie", "$8.90"], ["Pork Spring Rolls", "$7.80"], ["Plain Sausage Roll", "$6.90"], ["Cheese Bacon Sausage Roll", "$7.50"], ["Mini Pie", "$4.50"], ["Steak, Cheese And Bacon Pie", "$8.90"], ["Potato Pie", "$9.75"], ["Quiche Vegetarian", "$8.50"], ["Plain Chunky Beef", "$8.80"], ["Chunky Steak Pie", "$8.90"], ["Curry Sausage Rolls", "$6.90"], ["Chunky Beef Bacon Pie", "$8.90"], ["Creamy Chicken And Vegetable Pie", "$8.80"], ["Chunky Beef Mushroom Pie", "$8.90"], ["Creamy Chicken Curry", "$8.80"], ["Steak Kidney Pie", "$8.90"], ["Sauce (BBQ or Tomato)", "$0.80"]]
@@ -69,7 +69,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "slices",
             icon: "fa-cake-candles",
-            image: "images/donut.jpg",
+            image: "images/cake array.png",
             name: { en: "Slices", vi: "Banh ngot cat mieng" },
             intro: { en: "Cheesecakes, vanilla slices, lamingtons, tarts and sweet cabinet favourites.", vi: "Cheesecake, vanilla slice, lamington, tart va nhieu mon ngot hap dan." },
             items: [["Caramel Cheesecake Slice", "$6.50"], ["Mock Cream Doughnut", "$7.00"], ["Mud Cake Slice", "$7.00"], ["Apple Slice", "$6.50"], ["Vanilla Slice", "$7.00"], ["Lemon Meringue Pie Slice", "$7.00"], ["Custard Tart Slice", "$7.00"], ["Strawberry Cheesecake Slice", "$7.00"], ["Apple Turnover Slice", "$7.80"], ["Caramel Slice", "$7.00"], ["Lamington With Cream Slice", "$7.00"], ["French Vanilla Slice", "$7.50"], ["Passion Fruit Cheesecake Slice", "$7.00"], ["Caramel Cheesecake", "$6.50"], ["Carrot Cake Slice", "$7.00"], ["Plain Lamington", "$4.50"], ["Fresh Cream Doughnut", "$7.00"]]
@@ -77,7 +77,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "cakes",
             icon: "fa-birthday-cake",
-            image: "images/christmas.jpg",
+            image: "images/cake.jpeg",
             name: { en: "Cakes", vi: "Banh kem va banh lon" },
             intro: { en: "Family pies, sponge cakes, Swiss rolls and celebration cakes.", vi: "Pie gia dinh, sponge cake, swiss roll va banh cho dip dac biet." },
             items: [["Family Apple Pie", "$20.00"], ["Honey Swiss Roll Cake", "$14.50"], ["Carrot Cake Bar", "$16.50"], ["Apple Tea Cake", "$12.50"], ["Apple Pie", "$7.80"], ["Jam Swiss Roll Cake", "$14.50"], ["Black Forest Cake", "$45.00"], ["Mock Cream Vanilla Sponge Birthday Cake", "$45.00"], ["Chocolate Swiss Roll Cake", "$14.50"], ["Lemon Swiss Roll Cake", "$14.50"]]
@@ -85,7 +85,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "drinks",
             icon: "fa-bottle-water",
-            image: "images/australia.png",
+            image: "images/coffee 2.jpg",
             name: { en: "Drinks", vi: "Do uong" },
             intro: { en: "Cold drinks, iced tea, energy drinks, flavoured milk and bottled favourites.", vi: "Nuoc lanh, tra dao/chanh, nuoc tang luc, sua huong vi va do uong dong chai." },
             items: [["Canned Soft Drink", "$3.50"], ["Can Of Coke", "$3.50"], ["Red Fanta Bottle 600ml", "$6.80"], ["Can Of Coke No Sugar", "$3.50"], ["700ml Dare Iced Coffee", "$7.50"], ["Large Monster Can", "$6.50"], ["Bottle Of Coke No Sugar 600ml", "$6.80"], ["Peach / Lemon Iced Tea", "$6.50"], ["Soft Drink 600ml", "$6.80"], ["500ml Dare Iced Coffee / Chocolate Milk / Strawberry Milk", "$6.80"], ["Large V Can", "$7.80"], ["Bottle Of Coke 600ml", "$6.80"]]
@@ -93,7 +93,7 @@ window.BAKEHOUSE_MENU = {
         {
             slug: "coffee",
             icon: "fa-mug-hot",
-            image: "images/donut.jpg",
+            image: "images/coffee 4.webp",
             name: { en: "Hot Coffee", vi: "Ca phe" },
             intro: { en: "Hot coffee, iced latte and Vietnamese iced coffee for the morning run.", vi: "Ca phe nong, iced latte va ca phe sua da cho buoi sang." },
             items: [["Latte", "$6.50"], ["Vietnamese Iced Coffee", "$7.90"], ["Cappuccino", "$6.50"], ["Flat White", "$6.50"], ["Iced Latte", "$7.50"], ["Long Black", "$6.50"]]
