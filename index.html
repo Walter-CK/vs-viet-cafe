@@ -3,500 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Logan Reserve Bakehouse | Fresh Pies & Banh Mi</title>
-    <meta name="description" content="Logan Reserve's favourite local bakery. Famous for crispy Pork Banh Mi, chunky steak pies, and fresh barista coffee. Open 7 days.">
+    <title>Logan Reserve Bakehouse | Fresh Pies, Banh Mi & Coffee</title>
+    <meta name="description" content="Logan Reserve's local bakery for fresh banh mi, pies, cakes, bread, coffee and easy pre-orders. Open 7 days.">
     <link rel="icon" href="images/favicon.png">
     <meta name="theme-color" content="#78350f">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome t-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-
-    <!-- Navigation -->
+<body data-page="home">
     <nav class="nav">
         <div class="nav-inner">
-            <a href="#home" class="nav-logo">
-                <img src="images/favicon.png" alt="Logan Reserve Bakehouse Logo" class="nav-logo-img" />
+            <a href="#home" class="nav-logo" data-i18n-aria="nav.homeAria">
+                <img src="images/favicon.png" alt="Logan Reserve Bakehouse Logo" class="nav-logo-img">
                 <span>Logan Reserve <strong>Bakehouse</strong></span>
             </a>
+            <div class="nav-links">
+                <a href="#menu" data-i18n="nav.menu">Menu</a>
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#location" data-i18n="nav.location">Location</a>
+                <a href="order/" class="nav-order" data-i18n="nav.order">Order</a>
+            </div>
             <div class="nav-actions" aria-label="Order and contact links">
+                <button class="language-toggle" type="button" data-lang-toggle aria-label="Switch language">
+                    <span data-lang-current>EN</span>
+                    <i class="fa-solid fa-language"></i>
+                </button>
                 <a href="https://www.doordash.com/en-AU/store/logan-reserve-bakehouse-logan-reserve-30692010/40938146" target="_blank" rel="noopener" class="nav-action nav-action--doordash" aria-label="Order Logan Reserve Bakehouse on DoorDash">
-                    <img src="images/doordash.svg" alt="" class="nav-action-logo nav-action-logo--doordash" />
+                    <img src="images/doordash.svg" alt="" class="nav-action-logo nav-action-logo--doordash">
                 </a>
                 <a href="https://www.ubereats.com/au/store/logan-reserve-bakehouse-logan-reserve/lOXJfA0hUMG2mFk79sLCkA" target="_blank" rel="noopener" class="nav-action nav-action--uber" aria-label="Order Logan Reserve Bakehouse on Uber Eats">
-                    <img src="images/ubereats.svg" alt="" class="nav-action-logo nav-action-logo--uber" />
+                    <img src="images/ubereats.svg" alt="" class="nav-action-logo nav-action-logo--uber">
                 </a>
-                <a href="https://loganreserveshoppingvillage.com.au/shop/logan-reserve-bakehouse" target="_blank" rel="noopener" class="nav-action nav-action--village" aria-label="View Logan Reserve Bakehouse at Logan Reserve Shopping Village">
-                    <span class="nav-action-mark">L</span>
-                </a>
-                <a href="tel:+61734167399" class="nav-action nav-action--phone" aria-label="Call Logan Reserve Bakehouse">
+                <a href="tel:+61734167399" class="nav-action nav-action--phone" data-i18n-aria="nav.callAria">
                     <i class="fa-solid fa-phone"></i>
-                    <span class="nav-action-label nav-action-label--phone">Call</span>
+                    <span class="nav-action-label nav-action-label--phone" data-i18n="nav.call">Call</span>
                 </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section id="home" class="section-snap hero">
-        <div class="hero-blob hero-blob--left"></div>
-        <div class="hero-blob hero-blob--right"></div>
-
-        <div class="hero-img hero-img--left">
-            <img src="images/donut.jpg" alt="Fresh donuts" />
-        </div>
-        <div class="hero-img hero-img--right">
-            <img src="images/banh_mi.jpg" alt="Fresh banh mi" />
-        </div>
-
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="hero-badge-dot"></span>
-                Open 7 Days a Week
+    <main>
+        <section id="home" class="section-snap hero">
+            <div class="hero-img hero-img--left">
+                <img src="images/donut.jpg" alt="Fresh donuts">
             </div>
-            <h1 class="hero-heading">
-                Freshly Baked.<br>
-                <span class="hero-heading-accent">Locally Loved.</span>
-            </h1>
-            <p class="hero-sub">
-                From fresh <strong>Banh Mi's</strong> to steak pies and our wide variety of stunning coffee we are the stop for good food at Logan Reserve.
-            </p>
-            <div class="hero-actions">
-                <a href="#menu" class="btn btn-primary btn-lg">View Menu</a>
-                <a href="#location" class="btn btn-outline btn-lg">Find Us</a>
+            <div class="hero-img hero-img--right">
+                <img src="images/banh_mi.jpg" alt="Fresh banh mi">
             </div>
-        </div>
-    </section>
-
-    <!-- Updates -->
-    <section id="updates" class="section-snap updates-section">
-        <div class="container">
-            <div class="section-header">
-                <div>
-                    <h2 class="section-title">Latest Updates</h2>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    <span data-i18n="hero.badge">Open 7 Days a Week</span>
                 </div>
-                <a href="https://www.facebook.com/p/Logan-Reserve-Bakehouse-61557818652917/" target="_blank" class="fb-link">
-                    <i class="fa-brands fa-facebook"></i> Follow us
-                </a>
-            </div>
-            <div class="updates-scroll" id="updatesScroll">
-                <div class="update-card">
-                    <div class="update-card-img">
-                        <video autoplay muted loop playsinline preload="auto">
-                            <source src="images/bakehouse.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="update-card-body">
-                        <h3 class="update-title">Welcome to Logan Reserve Bakehouse</h3>
-                    </div>
-                </div>
-                <div class="update-card">
-                    <div class="update-card-img">
-                        <img src="images/labour.jpg" alt="Labour Day" />
-                    </div>
-                    <div class="update-card-body">
-                        <span class="update-date"><i class="fa-regular fa-calendar"></i> 1 May 2026</span>
-                        <h3 class="update-title">We are opened from 6am-6pm on Labour Day.</h3>
-                        <p class="update-desc">See you then 😍</p>
-                    </div>
-                </div>
-                <div class="update-card">
-                    <div class="update-card-img">
-                        <img src="images/anzac.jpg" alt="Australia Day" />
-                    </div>
-                    <div class="update-card-body">
-                        <span class="update-date"><i class="fa-regular fa-calendar"></i> 21 April 2026</span>
-                        <h3 class="update-title">We are opened from 6AM-6PM on Anzac day.</h3>
-                        <p class="update-desc">Lest We Forget ❤️🇦🇺.</p>
-                    </div>
-                </div>
-                <div class="update-card">
-                    <div class="update-card-img">
-                        <img src="images/easter.jpg" alt="Easter Hours" />
-                    </div>
-                    <div class="update-card-body">
-                        <span class="update-date"><i class="fa-regular fa-calendar"></i> 29 March 2026</span>
-                        <h3 class="update-title">Easter Trading Hours.</h3>
-                        <p class="update-desc">Happy Easter 🐣</p>
-                    </div>
-                </div>
-                <div class="update-card">
-                    <div class="update-card-img">
-                        <img src="images/australia.png" alt="Australia Day" />
-                    </div>
-                    <div class="update-card-body">
-                        <span class="update-date"><i class="fa-regular fa-calendar"></i> 25 January 2026</span>
-                    </div>
+                <h1 class="hero-heading">
+                    <span data-i18n="hero.title">Freshly Baked.</span><br>
+                    <span class="hero-heading-accent" data-i18n="hero.titleAccent">Locally Loved.</span>
+                </h1>
+                <p class="hero-sub" data-i18n="hero.copy">From crispy Vietnamese banh mi to golden pies, pastries, cakes and barista coffee, Logan Reserve Bakehouse is your everyday stop for food made fresh and served with warmth.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary btn-lg" data-i18n="hero.menuCta">Explore Menu</a>
+                    <a href="order/" class="btn btn-outline btn-lg" data-i18n="hero.orderCta">Pre-order</a>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <!-- Menu -->
-    <section id="menu" class="section-snap menu-section">
-        <div class="container">
-            <div class="section-title-center">
-                <h2 class="section-title">Full Menu</h2>
-                <div class="section-rule"></div>
-            </div>
-            <div class="menu-grid">
+        </section>
 
-            <!-- Bread -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-bread-slice"></i> Bread</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Meringue Worm</h4></div><span class="menu-price">$4.50</span></div>
-                    <div class="menu-item"><div><h4>White High Top Unsliced</h4></div><span class="menu-price">$6.00</span></div>
-                    <div class="menu-item"><div><h4>Hot Dog Rolls</h4></div><span class="menu-price">$7.20</span></div>
-                    <div class="menu-item"><div><h4>Whole Meal Loaves</h4></div><span class="menu-price">$5.80</span></div>
-                    <div class="menu-item"><div><h4>Marshmallow Corn</h4></div><span class="menu-price">$4.50</span></div>
-                    <div class="menu-item"><div><h4>Jam Doughnuts</h4></div><span class="menu-price">$5.80</span></div>
-                    <div class="menu-item"><div><h4>Fresh Sliced White Loaves</h4></div><span class="menu-price">$5.80</span></div>
-                    <div class="menu-item"><div><h4>Plain Croissant</h4></div><span class="menu-price">$5.20</span></div>
-                    <div class="menu-item"><div><h4>Nutella Doughnuts</h4></div><span class="menu-price">$5.80</span></div>
-                    <div class="menu-item"><div><h4>White High Top Sliced</h4></div><span class="menu-price">$6.00</span></div>
-                    <div class="menu-item"><div><h4>Pack Rolls</h4></div><span class="menu-price">$6.80</span></div>
-                    <div class="menu-item"><div><h4>Scroll Vegemite</h4></div><span class="menu-price">$4.50</span></div>
-                    <div class="menu-item"><div><h4>Apple Danish</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>French Stick No Seed</h4></div><span class="menu-price">$5.90</span></div>
-                    <div class="menu-item"><div><h4>Hamburger 6 Packs</h4></div><span class="menu-price">$5.80</span></div>
-                    <div class="menu-item"><div><h4>Blueberry Danish</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>Hawaiian Pizza</h4></div><span class="menu-price">$5.20</span></div>
-                    <div class="menu-item"><div><h4>Ham And Cheese Croissant Toasted</h4></div><span class="menu-price">$7.90</span></div>
-                    <div class="menu-item"><div><h4>Dinner Rolls</h4></div><span class="menu-price">$5.20</span></div>
-                    <div class="menu-item"><div><h4>6 Pack Vietnamese Rolls</h4></div><span class="menu-price">$7.20</span></div>
-                    <div class="menu-item"><div><h4>Caramel Doughnuts</h4></div><span class="menu-price">$5.80</span></div>
-                    <div class="menu-item"><div><h4>Large Cob Loaves Unsliced</h4></div><span class="menu-price">$6.20</span></div>
-                    <div class="menu-item"><div><h4>Cinnamon Twist Doughnuts</h4></div><span class="menu-price">$5.20</span></div>
-                    <div class="menu-item"><div><h4>Vienna Unsliced</h4></div><span class="menu-price">$6.20</span></div>
-                    <div class="menu-item"><div><h4>Mock Cream Large Flower Buns</h4></div><span class="menu-price">$12.00</span></div>
-                    <div class="menu-item"><div><h4>Meat Lover Pizza</h4></div><span class="menu-price">$5.20</span></div>
+        <section id="updates" class="section-snap updates-section">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <h2 class="section-title" data-i18n="updates.title">Latest Updates</h2>
+                        <p class="section-sub" data-i18n="updates.copy">Fresh hours, seasonal bakes and shop news from the team.</p>
+                    </div>
+                    <a href="https://www.facebook.com/p/Logan-Reserve-Bakehouse-61557818652917/" target="_blank" rel="noopener" class="fb-link">
+                        <i class="fa-brands fa-facebook"></i> <span data-i18n="updates.follow">Follow us</span>
+                    </a>
                 </div>
-            </details>
-
-            <!-- Wraps & Focaccia -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-utensils"></i> Wraps & Focaccia</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Chicken And Avocado Wrap</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>Chicken Focaccia</h4></div><span class="menu-price">$15.60</span></div>
-                    <div class="menu-item"><div><h4>Ham And Avocado Wrap</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>Ham Focaccia</h4></div><span class="menu-price">$15.60</span></div>
-                </div>
-            </details>
-
-            <!-- Vietnamese Banh Mi -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-pepper-hot"></i> Vietnamese Banh Mi</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Roasted Pork Banh Mi</h4></div><span class="menu-price">$15.60</span></div>
-                    <div class="menu-item"><div><h4>Lemongrass Chicken Banh Mi</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>BBQ Pork Banh Mi</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>Grilled Chicken Banh Mi</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>Vietnamese Signature Banh Mi</h4></div><span class="menu-price">$15.60</span></div>
-                    <div class="menu-item"><div><h4>Grilled Pork Banh Mi</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>Fried Rice</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>Fried Noodles</h4></div><span class="menu-price">$14.50</span></div>
-                </div>
-            </details>
-
-            <!-- Vermicelli Salad Bowls -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-bowl-food"></i> Vermicelli Salad Bowls</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Grilled Pork Noodle Salad Bowl</h4></div><span class="menu-price">$17.50</span></div>
-                    <div class="menu-item"><div><h4>Lemongrass Chicken Noodle Salad Bowl</h4></div><span class="menu-price">$17.50</span></div>
-                    <div class="menu-item"><div><h4>Grilled Chicken Noodle Salad Bowl</h4></div><span class="menu-price">$17.50</span></div>
-                    <div class="menu-item"><div><h4>Combination Noodle Salad Bowl</h4></div><span class="menu-price">$17.50</span></div>
-                </div>
-            </details>
-
-            <!-- Rice Paper Rolls -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-leaf"></i> Rice Paper Rolls</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Chicken & Avocado Rice Paper Rolls</h4></div><span class="menu-price">$11.00</span></div>
-                    <div class="menu-item"><div><h4>Pork And Prawns Rice Paper Rolls</h4></div><span class="menu-price">$11.00</span></div>
-                    <div class="menu-item"><div><h4>Lemongrass Chicken Rice Paper Rolls</h4></div><span class="menu-price">$11.00</span></div>
-                    <div class="menu-item"><div><h4>BBQ Pork Rice Paper Rolls</h4></div><span class="menu-price">$11.00</span></div>
-                    <div class="menu-item"><div><h4>Grilled Chicken Rice Paper Rolls</h4></div><span class="menu-price">$11.00</span></div>
-                    <div class="menu-item"><div><h4>Grilled Pork Rice Paper Rolls</h4></div><span class="menu-price">$11.00</span></div>
-                </div>
-            </details>
-
-            <!-- Salad Rolls -->
-            <details class="menu-accordion menu-accordion--static" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-seedling"></i> Salad Rolls</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Ham Salad Roll</h4></div><span class="menu-price">$13.00</span></div>
-                    <div class="menu-item"><div><h4>Chicken Salad Roll</h4></div><span class="menu-price">$13.00</span></div>
-                </div>
-            </details>
-
-            <!-- Sandwiches -->
-            <details class="menu-accordion menu-accordion--static" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-burger"></i> Sandwiches</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Chicken, Cheese And Lettuce Sandwich</h4></div><span class="menu-price">$9.80</span></div>
-                    <div class="menu-item"><div><h4>Eggs And Lettuce Sandwich</h4></div><span class="menu-price">$9.80</span></div>
-                    <div class="menu-item"><div><h4>Ham, Cheese And Tomato Sandwich</h4></div><span class="menu-price">$9.80</span></div>
-                </div>
-            </details>
-
-            <!-- Hot Food -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-fire-flame-curved"></i> Hot Food</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Quiche Lorraine</h4></div><span class="menu-price">$8.50</span></div>
-                    <div class="menu-item"><div><h4>Smokey Dog</h4></div><span class="menu-price">$7.80</span></div>
-                    <div class="menu-item"><div><h4>Spinach And Feta</h4></div><span class="menu-price">$7.80</span></div>
-                    <div class="menu-item"><div><h4>Chunky Steak Pepper Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Chunky Beef Curry Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Mince & Veggie Pasty</h4></div><span class="menu-price">$7.80</span></div>
-                    <div class="menu-item"><div><h4>Chunky Steak Cheese Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Roasted Pork Gravy Roll</h4></div><span class="menu-price">$13.00</span></div>
-                    <div class="menu-item"><div><h4>Vietnamese Pork Meatball Skewer</h4></div><span class="menu-price">$6.00</span></div>
-                    <div class="menu-item"><div><h4>Mini Quiche</h4></div><span class="menu-price">$4.50</span></div>
-                    <div class="menu-item"><div><h4>Curry Beef Minced</h4></div><span class="menu-price">$8.80</span></div>
-                    <div class="menu-item"><div><h4>Beef Minced And Cheese</h4></div><span class="menu-price">$8.80</span></div>
-                    <div class="menu-item"><div><h4>Steak, Tomato And Onion Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Classic Beef Minced Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Pork Spring Rolls</h4></div><span class="menu-price">$7.80</span></div>
-                    <div class="menu-item"><div><h4>Plain Sausage Roll</h4></div><span class="menu-price">$6.90</span></div>
-                    <div class="menu-item"><div><h4>Cheese Bacon Sausage Roll</h4></div><span class="menu-price">$7.50</span></div>
-                    <div class="menu-item"><div><h4>Mini Pie</h4></div><span class="menu-price">$4.50</span></div>
-                    <div class="menu-item"><div><h4>Steak, Cheese And Bacon Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Potato Pie</h4></div><span class="menu-price">$9.75</span></div>
-                    <div class="menu-item"><div><h4>Quiche Vegetarian</h4></div><span class="menu-price">$8.50</span></div>
-                    <div class="menu-item"><div><h4>Plain Chunky Beef</h4></div><span class="menu-price">$8.80</span></div>
-                    <div class="menu-item"><div><h4>Chunky Steak Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Curry Sausage Rolls</h4></div><span class="menu-price">$6.90</span></div>
-                    <div class="menu-item"><div><h4>Chunky Beef Bacon Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Creamy Chicken And Vegetable Pie</h4></div><span class="menu-price">$8.80</span></div>
-                    <div class="menu-item"><div><h4>Chunky Beef Mushroom Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Creamy Chicken Curry</h4></div><span class="menu-price">$8.80</span></div>
-                    <div class="menu-item"><div><h4>Steak Kidney Pie</h4></div><span class="menu-price">$8.90</span></div>
-                    <div class="menu-item"><div><h4>Sauce (BBQ or Tomato)</h4></div><span class="menu-price">$0.80</span></div>
-                </div>
-            </details>
-
-            <!-- Slice -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-cake-candles"></i> Slice</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Caramel Cheesecake Slice</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>Mock Cream Doughnut</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>Mud Cake Slice</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>Apple Slice</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>Vanilla Slice</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>Lemon Meringue Pie Slice</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>Custard Tart Slice</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>Strawberry Cheesecake Slice</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>Apple Turnover Slice</h4></div><span class="menu-price">$7.80</span></div>
-                    <div class="menu-item"><div><h4>Caramel Slice</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>Lamington With Cream Slice</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>French Vanilla Slice</h4></div><span class="menu-price">$7.50</span></div>
-                    <div class="menu-item"><div><h4>Passion Fruit Cheesecake Slice</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>Caramel Cheesecake</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>Carrot Cake Slice</h4></div><span class="menu-price">$7.00</span></div>
-                    <div class="menu-item"><div><h4>Plain Lamington</h4></div><span class="menu-price">$4.50</span></div>
-                    <div class="menu-item"><div><h4>Fresh Cream Doughnut</h4></div><span class="menu-price">$7.00</span></div>
-                </div>
-            </details>
-
-            <!-- Cakes -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-birthday-cake"></i> Cakes</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Family Apple Pie</h4></div><span class="menu-price">$20.00</span></div>
-                    <div class="menu-item"><div><h4>Honey Swiss Roll Cake</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>Carrot Cake Bar</h4></div><span class="menu-price">$16.50</span></div>
-                    <div class="menu-item"><div><h4>Apple Tea Cake</h4></div><span class="menu-price">$12.50</span></div>
-                    <div class="menu-item"><div><h4>Apple Pie</h4></div><span class="menu-price">$7.80</span></div>
-                    <div class="menu-item"><div><h4>Jam Swiss Roll Cake</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>Black Forest Cake</h4></div><span class="menu-price">$45.00</span></div>
-                    <div class="menu-item"><div><h4>Mock Cream Vanilla Sponge Birthday Cake</h4></div><span class="menu-price">$45.00</span></div>
-                    <div class="menu-item"><div><h4>Chocolate Swiss Roll Cake</h4></div><span class="menu-price">$14.50</span></div>
-                    <div class="menu-item"><div><h4>Lemon Swiss Roll Cake</h4></div><span class="menu-price">$14.50</span></div>
-                </div>
-            </details>
-
-            <!-- Drinks -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-bottle-water"></i> Drinks</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Canned Soft Drink</h4></div><span class="menu-price">$3.50</span></div>
-                    <div class="menu-item"><div><h4>Can Of Coke</h4></div><span class="menu-price">$3.50</span></div>
-                    <div class="menu-item"><div><h4>Red Fanta Bottle 600ml</h4></div><span class="menu-price">$6.80</span></div>
-                    <div class="menu-item"><div><h4>Can Of Coke No Sugar</h4></div><span class="menu-price">$3.50</span></div>
-                    <div class="menu-item"><div><h4>700ml Dare Iced Coffee</h4></div><span class="menu-price">$7.50</span></div>
-                    <div class="menu-item"><div><h4>Large Monster Can</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>Bottle Of Coke No Sugar 600ml</h4></div><span class="menu-price">$6.80</span></div>
-                    <div class="menu-item"><div><h4>Peach / Lemon Iced Tea</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>Soft Drink 600ml</h4></div><span class="menu-price">$6.80</span></div>
-                    <div class="menu-item"><div><h4>500ml Dare Iced Coffee / Chocolate Milk / Strawberry Milk</h4></div><span class="menu-price">$6.80</span></div>
-                    <div class="menu-item"><div><h4>Large V Can</h4></div><span class="menu-price">$7.80</span></div>
-                    <div class="menu-item"><div><h4>Bottle Of Coke 600ml</h4></div><span class="menu-price">$6.80</span></div>
-                </div>
-            </details>
-
-            <!-- Hot Coffee -->
-            <details class="menu-accordion" open>
-                <summary class="menu-accordion-title">
-                    <span><i class="fa-solid fa-mug-hot"></i> Hot Coffee</span>
-                    <i class="fa-solid fa-chevron-down menu-chevron"></i>
-                </summary>
-                <div class="menu-accordion-body">
-                    <div class="menu-item"><div><h4>Latte</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>Vietnamese Iced Coffee</h4></div><span class="menu-price">$7.90</span></div>
-                    <div class="menu-item"><div><h4>Cappuccino</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>Flat White</h4></div><span class="menu-price">$6.50</span></div>
-                    <div class="menu-item"><div><h4>Iced Latte</h4></div><span class="menu-price">$7.50</span></div>
-                    <div class="menu-item"><div><h4>Long Black</h4></div><span class="menu-price">$6.50</span></div>
-                </div>
-            </details>
-
-            </div><!-- /menu-grid -->
-        </div>
-    </section>
-
-    <!-- Location -->
-    <section id="location" class="section-snap location-section">
-        <div class="container">
-            <div class="location-grid">
-                <div class="location-info">
-                    <h2 class="section-title section-title--light">Visit Us</h2>
-                    <p class="location-intro">Located in the Logan Reserve Shopping Village. Easy parking available.</p>
-
-                    <div class="location-details">
-                        <div class="location-item">
-                            <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
-                            <div>
-                                <h4>Address</h4>
-                                <a href="https://www.google.com/maps/dir//Logan+Reserve+Bakehouse+Logan+Reserve+QLD">
-                                    Shop 10, 450-458 Chambers Flat Road,<br>Logan Reserve QLD 4133
-                                </a>
-                            </div>
+                <div class="updates-scroll" id="updatesScroll">
+                    <article class="update-card">
+                        <div class="update-card-img">
+                            <video autoplay muted loop playsinline preload="auto">
+                                <source src="images/bakehouse.mp4" type="video/mp4">
+                            </video>
                         </div>
-                        <div class="location-item">
-                            <div class="location-icon"><i class="fa-solid fa-clock"></i></div>
-                            <div>
-                                <h4>Opening Hours</h4>
-                                <div class="hours">
-                                    <span>Monday – Friday</span><span>5:00am – 6:00pm</span>
-                                    <span>Saturday – Sunday</span><span>6:00am – 6:00pm</span>
+                        <div class="update-card-body">
+                            <h3 class="update-title" data-i18n="updates.welcome">Welcome to Logan Reserve Bakehouse</h3>
+                        </div>
+                    </article>
+                    <article class="update-card">
+                        <div class="update-card-img"><img src="images/labour.jpg" alt="Labour Day hours"></div>
+                        <div class="update-card-body">
+                            <span class="update-date"><i class="fa-regular fa-calendar"></i> 1 May 2026</span>
+                            <h3 class="update-title" data-i18n="updates.labour">Open 6am-6pm on Labour Day.</h3>
+                        </div>
+                    </article>
+                    <article class="update-card">
+                        <div class="update-card-img"><img src="images/anzac.jpg" alt="Anzac Day hours"></div>
+                        <div class="update-card-body">
+                            <span class="update-date"><i class="fa-regular fa-calendar"></i> 21 April 2026</span>
+                            <h3 class="update-title" data-i18n="updates.anzac">Open 6am-6pm on Anzac Day.</h3>
+                        </div>
+                    </article>
+                    <article class="update-card">
+                        <div class="update-card-img"><img src="images/easter.jpg" alt="Easter trading hours"></div>
+                        <div class="update-card-body">
+                            <span class="update-date"><i class="fa-regular fa-calendar"></i> 29 March 2026</span>
+                            <h3 class="update-title" data-i18n="updates.easter">Easter trading hours.</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="section-snap menu-section">
+            <div class="container">
+                <div class="section-title-center">
+                    <p class="eyebrow" data-i18n="menu.eyebrow">Pick a category</p>
+                    <h2 class="section-title" data-i18n="menu.title">Browse the Bakehouse Menu</h2>
+                    <p class="section-lead" data-i18n="menu.copy">Big flavours deserve their own space. Choose a category to see the full item list, prices and quick order link.</p>
+                </div>
+                <div class="category-grid" id="categoryGrid"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section-snap about-section">
+            <div class="container about-grid">
+                <div class="about-copy">
+                    <p class="eyebrow" data-i18n="about.eyebrow">About us</p>
+                    <h2 class="section-title" data-i18n="about.title">A neighbourhood bakery with Vietnamese heart.</h2>
+                    <p data-i18n="about.p1">Logan Reserve Bakehouse is built around the kind of food people come back for: warm bread, flaky pastries, honest pies, crisp salad rolls and banh mi made with fresh herbs and generous fillings.</p>
+                    <p data-i18n="about.p2">We are proud to be part of the local rhythm, from early school runs and tradie coffees to weekend family lunches. Step in, say hello and leave with something fresh from the oven.</p>
+                </div>
+                <div class="about-photo">
+                    <img src="images/opening.jpg" alt="Logan Reserve Bakehouse team and shop opening">
+                </div>
+            </div>
+        </section>
+
+        <section id="busy" class="busy-section">
+            <div class="container busy-grid">
+                <div>
+                    <p class="eyebrow" data-i18n="busy.eyebrow">Plan your visit</p>
+                    <h2 class="section-title" data-i18n="busy.title">See when the shop is busiest</h2>
+                    <p class="section-lead" data-i18n="busy.copy">Use the live Google listing to check the bakery, popular visit times, reviews and directions before you head over.</p>
+                </div>
+                <div class="embed-frame">
+                    <iframe title="Logan Reserve Bakehouse Google listing and popular times" src="https://www.google.com/maps?q=Logan%20Reserve%20Bakehouse%20450-458%20Chambers%20Flat%20Road%20Logan%20Reserve%20QLD%204133&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="location" class="section-snap location-section">
+            <div class="container">
+                <div class="location-grid">
+                    <div class="location-info">
+                        <h2 class="section-title section-title--light" data-i18n="location.title">Visit Us</h2>
+                        <p class="location-intro" data-i18n="location.copy">Find us in Logan Reserve Shopping Village with easy parking and fresh food ready every day.</p>
+                        <div class="location-details">
+                            <div class="location-item">
+                                <div class="location-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <h4 data-i18n="location.addressLabel">Address</h4>
+                                    <a href="https://www.google.com/maps/dir//Logan+Reserve+Bakehouse+Logan+Reserve+QLD" target="_blank" rel="noopener">Shop 10, 450-458 Chambers Flat Road,<br>Logan Reserve QLD 4133</a>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <div class="location-icon"><i class="fa-solid fa-clock"></i></div>
+                                <div>
+                                    <h4 data-i18n="location.hoursLabel">Opening Hours</h4>
+                                    <div class="hours">
+                                        <span data-i18n="location.weekdays">Monday - Friday</span><span>5:00am - 6:00pm</span>
+                                        <span data-i18n="location.weekends">Saturday - Sunday</span><span>6:00am - 6:00pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="location-item">
+                                <div class="location-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <h4 data-i18n="location.contactLabel">Contact</h4>
+                                    <a href="tel:+61734167399" class="location-phone">(07) 3416 7399</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="location-item">
-                            <div class="location-icon"><i class="fa-solid fa-phone"></i></div>
-                            <div>
-                                <h4>Contact</h4>
-                                <a href="tel:+61734167399" class="location-phone">(07) 3416 7399</a>
-                            </div>
-                        </div>
                     </div>
-
-                </div>
-
-                <div class="location-map">
-                    <a href="https://www.google.com/maps/dir//Logan+Reserve+Bakehouse+Logan+Reserve+QLD" target="_blank">
-                        <img src="images/plateu.jpg" alt="Logan Reserve Bakehouse location" />
-                        <div class="map-overlay">
-                            <span><i class="fa-solid fa-map-location-dot"></i> Get Directions</span>
-                        </div>
-                    </a>
+                    <div class="location-map embed-frame">
+                        <iframe title="Google map for Logan Reserve Bakehouse" src="https://www.google.com/maps?q=Shop%2010%20450-458%20Chambers%20Flat%20Road%20Logan%20Reserve%20QLD%204133&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Lightbox -->
     <div class="lightbox" id="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img id="lightbox-img" src="" alt="" />
+        <button class="lightbox-close" type="button" aria-label="Close image">&times;</button>
+        <img id="lightbox-img" src="" alt="">
     </div>
-    
-    <script>
-    // Lightbox
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    
-    document.querySelectorAll('.update-card-img img').forEach(img => {
-        img.addEventListener('click', () => {
-            lightboxImg.src = img.src;
-            lightboxImg.alt = img.alt;
-            lightbox.classList.add('open');
-        });
-    });
-    
-    lightbox.addEventListener('click', () => lightbox.classList.remove('open'));
 
-
-    // Menu previews
-    document.querySelectorAll('.menu-accordion').forEach(accordion => {
-        const title = accordion.querySelector('.menu-accordion-title');
-        accordion.open = true;
-        title.setAttribute('aria-expanded', 'false');
-
-        title.addEventListener('click', event => {
-            event.preventDefault();
-            accordion.open = true;
-
-            const expanded = accordion.classList.toggle('is-expanded');
-            title.setAttribute('aria-expanded', String(expanded));
-        });
-    });
-    // Horizontal scroll on mouse wheel over updates.
-    // Keep every wheel gesture captured by the updates strip so vertical page
-    // scrolling never leaks through at either end of the horizontal list.
-    const updatesScroll = document.getElementById('updatesScroll');
-    updatesScroll.addEventListener('wheel', function(e) {
-        const primaryDelta = Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
-
-        e.preventDefault();
-        this.scrollBy({ left: primaryDelta, behavior: 'auto' });
-    }, { passive: false });
-    </script>
+    <script src="menu-data.js"></script>
+    <script src="site.js"></script>
 </body>
 </html>
