@@ -4,7 +4,7 @@
     --white: #ffffff;
     --gold: #d97706;
     --gold-dark: #78350f;
-    --gold-deep: #451a03;
+    --gold-deep: #78350f;
     --red: #a83225;
     --green: #166534;
     --ink: #17120d;
@@ -19,7 +19,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background: var(--gold-deep);
+    background: var(--gold-dark);
     max-width: 100%;
 }
 
@@ -205,16 +205,17 @@ button, input, select, textarea { font: inherit; }
 
 .hero-img {
     position: absolute;
-    display: none;
+    display: block;
     overflow: hidden;
     border: 5px solid rgba(255,255,255,0.92);
     box-shadow: var(--shadow);
     pointer-events: none;
+    z-index: 1;
 }
 
 .hero-img img { width: 100%; height: 100%; object-fit: cover; }
-.hero-img--left { left: 4%; top: 48%; width: 230px; height: 310px; border-radius: 46% 54% 42% 58%; transform: rotate(-8deg); }
-.hero-img--right { right: 4%; top: 44%; width: 220px; height: 300px; border-radius: 54% 46% 58% 42%; transform: rotate(8deg); }
+.hero-img--left { left: -1.7rem; top: 15%; width: 118px; height: 158px; border-radius: 46% 54% 42% 58%; transform: rotate(-8deg); }
+.hero-img--right { right: -1.8rem; bottom: 8%; width: 112px; height: 150px; border-radius: 54% 46% 58% 42%; transform: rotate(8deg); }
 
 .hero-content {
     position: relative;
@@ -439,17 +440,6 @@ button, input, select, textarea { font: inherit; }
     height: min(60svh, 520px);
     object-fit: cover;
     cursor: pointer;
-}
-
-.busy-section {
-    background: var(--white);
-    padding: 5rem 0;
-}
-
-.busy-grid {
-    display: grid;
-    gap: 1.5rem;
-    align-items: center;
 }
 
 .embed-frame {
@@ -717,9 +707,10 @@ button, input, select, textarea { font: inherit; }
 }
 
 @media (min-width: 940px) {
-    .hero-img { display: block; }
+    .hero-img--left { left: 4%; top: 48%; width: 230px; height: 310px; }
+    .hero-img--right { right: 4%; top: 44%; bottom: auto; width: 220px; height: 300px; }
     .category-grid { grid-template-columns: repeat(3, 1fr); }
-    .about-grid, .busy-grid, .location-grid, .order-layout { grid-template-columns: 1fr 1fr; }
+    .about-grid, .location-grid, .order-layout { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 820px) {
@@ -730,7 +721,8 @@ button, input, select, textarea { font: inherit; }
     .nav-actions { margin-left: auto; gap: 0.32rem; }
     .language-toggle { min-width: 50px; padding: 0 0.55rem; }
     .nav-action { min-width: 38px; height: 38px; padding-inline: 0.55rem; }
-    .nav-action--phone { min-width: 70px; }
+    .nav-action--phone { min-width: 38px; }
+    .nav-action-label--phone { display: none; }
     .nav-action-logo { width: 1.25rem; }
     .nav-action-logo--uber { width: 1.7rem; }
     .container, .hero-content, .category-hero-content { width: min(100% - 1.5rem, 1200px); }
@@ -739,7 +731,6 @@ button, input, select, textarea { font: inherit; }
 }
 
 @media (max-width: 620px) {
-    .nav-action--doordash, .nav-action--uber, .nav-action--phone { display: none; }
     .nav-logo-img { width: 42px; height: 42px; }
     .hero-heading { font-size: 2.28rem; }
     .hero-sub { font-size: 0.96rem; }
