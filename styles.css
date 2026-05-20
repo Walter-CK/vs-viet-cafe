@@ -148,7 +148,6 @@ button, input, select, textarea { font: inherit; }
 
 .nav-links a { padding: 0.5rem 0.2rem; }
 .nav-links a:hover { color: var(--gold); }
-.nav-order { color: var(--gold-dark) !important; }
 
 .nav-actions {
     display: flex;
