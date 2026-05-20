@@ -4,7 +4,6 @@
     --white: #ffffff;
     --gold: #d97706;
     --gold-dark: #78350f;
-    --gold-deep: #78350f;
     --green: #166534;
     --ink: #17120d;
     --muted: #6f665c;
@@ -20,6 +19,7 @@ html {
     overflow-x: hidden;
     background: var(--gold-dark);
     max-width: 100%;
+    background-color: var(--gold-dark);
 }
 
 body {
@@ -31,6 +31,7 @@ body {
     font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
     max-width: 100%;
+    background-color: var(--gold-dark);
 }
 
 img { display: block; max-width: 100%; height: auto; }
@@ -456,7 +457,7 @@ button, input, select, textarea { font: inherit; }
 }
 
 .location-section {
-    background: var(--gold-deep);
+    background: var(--gold-dark);
     color: var(--white);
     padding: 6rem 0;
 }
