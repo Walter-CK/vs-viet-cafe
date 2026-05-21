@@ -173,7 +173,6 @@ window.BAKEHOUSE_MENU = {
             "hero.menuCta": "Xem thuc don",
             "hero.orderCta": "Dat truoc",
             "updates.title": "Tin moi nhat",
-            "updates.copy": "Gio mo cua, banh theo mua va thong tin moi tu tiem.",
             "updates.follow": "Theo doi",
             "updates.welcome": "Chao mung den Logan Reserve Bakehouse",
             "updates.labour": "Mo cua 6am-6pm vao Labour Day.",
