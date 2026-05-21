@@ -138,7 +138,7 @@ window.BAKEHOUSE_MENU = {
             "location.weekends": "Saturday - Sunday",
             "location.contactLabel": "Contact",
             "category.back": "Back to menu",
-            "category.order": "Start a pre-order",
+            "category.order": "Start an online order",
             "category.count": "Menu items",
             "order.eyebrow": "Pre-order",
             "order.title": "Order ahead for pickup",
