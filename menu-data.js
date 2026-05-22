@@ -122,7 +122,7 @@ window.BAKEHOUSE_MENU = {
             "updates.anzac": "Open 6am-6pm on Anzac Day.",
             "updates.easter": "Easter trading hours.",
             "menu.eyebrow": "Pick a category",
-            "menu.title": "Browse the Bakehouse Menu",
+            "menu.title": "Bakehouse Menu",
             "menu.copy": "Plan, decide and order, starting with the 12 official Bakehouse categories below.",
             "menu.view": "View category",
             "menu.items": "items",
