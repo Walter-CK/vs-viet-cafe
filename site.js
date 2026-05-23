@@ -1,8 +1,8 @@
 (function () {
-    const menu = window.BAKEHOUSE_MENU;
+    const menu = window.VS_VIET_MENU;
     const root = document.documentElement;
     const page = document.body.dataset.page;
-    const savedLanguage = localStorage.getItem("bakehouseLanguage");
+    const savedLanguage = localStorage.getItem("vsVietLanguage");
     let language = savedLanguage === "vi" ? "vi" : "en";
 
     function asset(path) {
@@ -16,7 +16,7 @@
 
     function setLanguage(nextLanguage) {
         language = nextLanguage === "vi" ? "vi" : "en";
-        localStorage.setItem("bakehouseLanguage", language);
+        localStorage.setItem("vsVietLanguage", language);
         root.lang = language;
         document.querySelectorAll("[data-lang-current]").forEach((node) => {
             node.textContent = language.toUpperCase();
@@ -63,7 +63,7 @@
         const category = menu.categories.find((item) => item.slug === slug);
         if (!category) return;
 
-        document.title = `${category.name.en} | Logan Reserve Bakehouse`;
+        document.title = `${category.name.en} | V's Viet Cafe`;
         const hero = document.querySelector(".category-hero");
         if (hero) hero.style.setProperty("--hero-image", `url('../${category.image}')`);
 
@@ -78,14 +78,18 @@
         if (count) count.textContent = `${category.items.length} ${t("category.count")}`;
         if (order) order.href = `../order/?category=${encodeURIComponent(category.name.en)}`;
         if (list) {
-            list.innerHTML = category.items.map(([name, price]) => `
+            list.innerHTML = category.items.map((item) => {
+                const name = language === "vi" && item[2] ? item[2] : item[0];
+                const price = item[1];
+                return `
                 <article class="listing-item">
                     <div>
                         <h3>${name}</h3>
                     </div>
                     <strong>${price}</strong>
                 </article>
-            `).join("");
+            `;
+            }).join("");
         }
     }
 

@@ -1,102 +1,210 @@
-window.BAKEHOUSE_MENU = {
+window.VS_VIET_MENU = {
     categories: [
         {
-            slug: "bread",
-            icon: "fa-bread-slice",
-            image: "images/bread.jpg",
-            name: { en: "Bread", vi: "Banh mi va banh nuong" },
-            intro: { en: "Fresh loaves, rolls, croissants, doughnuts and bakery favourites for the whole day.", vi: "Banh mi, banh cuon, croissant, donut va cac mon banh moi ra lo moi ngay." },
+            slug: "drinks",
+            icon: "fa-mug-hot",
+            image: "images/coffee 4.webp",
+            name: { en: "Drinks & Coffee", vi: "Do uong va ca phe" },
+            intro: {
+                en: "Barista coffee, Vietnamese-style iced drinks, frappes, fresh juices, iced teas and cold favourites.",
+                vi: "Ca phe pha may, do uong da kieu Viet, frappe, nuoc ep tuoi, tra da va cac loai nuoc lanh."
+            },
             items: [
-                ["Meringue Worm", "$4.50"], ["White High Top Unsliced", "$6.00"], ["Hot Dog Rolls", "$7.20"], ["Whole Meal Loaves", "$5.80"], ["Marshmallow Corn", "$4.50"], ["Jam Doughnuts", "$5.80"], ["Fresh Sliced White Loaves", "$5.80"], ["Plain Croissant", "$5.20"], ["Nutella Doughnuts", "$5.80"], ["White High Top Sliced", "$6.00"], ["Pack Rolls", "$6.80"], ["Scroll Vegemite", "$4.50"], ["Apple Danish", "$6.50"], ["French Stick No Seed", "$5.90"], ["Hamburger 6 Packs", "$5.80"], ["Blueberry Danish", "$6.50"], ["Hawaiian Pizza", "$5.20"], ["Ham And Cheese Croissant Toasted", "$7.90"], ["Dinner Rolls", "$5.20"], ["6 Pack Vietnamese Rolls", "$7.20"], ["Caramel Doughnuts", "$5.80"], ["Large Cob Loaves Unsliced", "$6.20"], ["Cinnamon Twist Doughnuts", "$5.20"], ["Vienna Unsliced", "$6.20"], ["Mock Cream Large Flower Buns", "$12.00"], ["Meat Lover Pizza", "$5.20"]
+                ["Cappuccino", "from $5", "Cappuccino"],
+                ["Latte", "from $5", "Latte"],
+                ["Flat White", "from $5", "Flat white"],
+                ["Long Black", "from $5", "Long black"],
+                ["Mocha", "from $5.50", "Mocha"],
+                ["Hot Chocolate", "from $5.50", "Socola nong"],
+                ["Chai or Dirty Chai", "from $5.50", "Chai hoac dirty chai"],
+                ["Iced Latte or Iced Long Black", "from $5", "Latte da hoac long black da"],
+                ["Coffee, Mocha, Chocolate or Caramel Frappe", "from $7", "Frappe ca phe, mocha, socola hoac caramel"],
+                ["Milkshake or Thickshake", "from $7", "Milkshake hoac thickshake"],
+                ["Tea Pot", "$5", "Tra am"],
+                ["Fresh Juice", "$8", "Nuoc ep tuoi"],
+                ["Watermelon, Mango, Banana or Berry Crush", "from $8.50", "Da xay dua hau, xoai, chuoi hoac dau"],
+                ["Mango, Passionfruit, Lychee, Lemon or Peach Iced Tea", "$7", "Tra da xoai, chanh day, vai, chanh hoac dao"],
+                ["Soft Drink", "$3.50", "Nuoc ngot"]
             ]
         },
         {
-            slug: "wraps-focaccia",
-            icon: "fa-utensils",
+            slug: "all-day-breakfast",
+            icon: "fa-egg",
+            image: "images/coffee.jpg",
+            name: { en: "All Day Breakfast", vi: "Bua sang ca ngay" },
+            intro: {
+                en: "Cafe breakfast favourites for early starts, school-run coffees and slow weekend mornings.",
+                vi: "Cac mon an sang quen thuoc cho buoi sang som, ly ca phe tren duong di hoc va cuoi tuan thong tha."
+            },
+            items: [
+                ["Eggs on Toast", "$11", "Trung an kem banh mi nuong"],
+                ["Avo on Toast", "$15", "Bo nghien tren banh mi nuong"],
+                ["Eggs Benedict", "$18", "Trung Benedict"],
+                ["Big Breakfast", "$25", "Bua sang lon"],
+                ["Medium Breakfast", "$20", "Bua sang vua"],
+                ["Vege Breakfast", "$20", "Bua sang chay"],
+                ["Bacon & Egg Burger", "$14", "Burger thit xong khoi va trung"],
+                ["Pancake Stack", "$15", "Pancake xep tang"],
+                ["Maple Bacon Pancakes", "$18", "Pancake thit xong khoi sot maple"],
+                ["Salmon Croissant", "$18", "Croissant ca hoi"],
+                ["Open Omelette", "$17", "Trung op-let mo"],
+                ["BLAT", "$16", "BLAT"]
+            ]
+        },
+        {
+            slug: "cafe-lunch",
+            icon: "fa-burger",
             image: "images/sandwiches.png",
-            name: { en: "Wraps & Focaccia", vi: "Wrap va focaccia" },
-            intro: { en: "Made-to-go lunches with fresh fillings, soft wraps and toasted focaccia.", vi: "Bua trua tien loi voi nhan tuoi, wrap mem va focaccia nuong am." },
-            items: [["Chicken And Avocado Wrap", "$14.50"], ["Chicken Focaccia", "$15.60"], ["Ham And Avocado Wrap", "$14.50"], ["Ham Focaccia", "$15.60"]]
+            name: { en: "Cafe Lunch", vi: "Bua trua cafe" },
+            intro: {
+                en: "Burgers, steak sandwiches, toasted open sandwiches, chips and easy plates for a casual lunch.",
+                vi: "Burger, steak sandwich, sandwich nuong mo, khoai chien va cac mon de an cho bua trua than mat."
+            },
+            items: [
+                ["Ultimate Beef Burger", "$20", "Burger bo dac biet"],
+                ["Caesar Chicken Burger", "$18", "Burger ga Caesar"],
+                ["Steak Sandwich", "$20", "Sandwich bo bit tet"],
+                ["Chicken & Avo Grilled Open Sandwich", "$20", "Sandwich nuong ga va bo"],
+                ["Bacon & Egg Grilled Open Sandwich", "$16", "Sandwich nuong thit xong khoi va trung"],
+                ["Ham, Cheese & Tomato Grilled Open Sandwich", "$18", "Sandwich nuong jambon, pho mai va ca chua"],
+                ["Vegetarian Grilled Open Sandwich", "$18", "Sandwich nuong chay"],
+                ["Chips", "from $4", "Khoai chien"],
+                ["Wedges with Sour Cream & Sweet Chilli", "$10", "Khoai tay mui cau voi sour cream va sot ot ngot"]
+            ]
+        },
+        {
+            slug: "entree-sharing",
+            icon: "fa-utensils",
+            image: "images/plateu.jpg",
+            name: { en: "Entree & Sharing", vi: "Khai vi va mon chia se" },
+            intro: {
+                en: "Spring rolls, rice paper rolls, grilled skewers and tasting plates made for sharing.",
+                vi: "Cha gio, goi cuon, xien nuong va dia thu vi de cung nhau thuong thuc."
+            },
+            items: [
+                ["Tasting Plate", "$18", "Dia thu vi"],
+                ["Pork Spring Rolls (4)", "$10", "Cha gio heo (4 cuon)"],
+                ["Vegetarian Spring Rolls (4)", "$10", "Cha gio chay (4 cuon)"],
+                ["Rice Paper Rolls (3)", "$10", "Goi cuon (3 cuon)"],
+                ["Skewer Sensations", "$5", "Xien nuong"],
+                ["Grilled Pork Balls Nem Nuong", "$10", "Nem nuong"],
+                ["Beef Wrapped in Betel Leaf Bo La Lot", "$10", "Bo la lot"],
+                ["Fried Pork Wontons", "$10", "Hoanh thanh heo chien"]
+            ]
+        },
+        {
+            slug: "pho-noodle-soups",
+            icon: "fa-bowl-food",
+            image: "images/vermicelli bowl.avif",
+            name: { en: "Pho & Noodle Soups", vi: "Pho va mi nuoc" },
+            intro: {
+                en: "Steaming bowls with herbs, bean sprouts, tender meats and rich Vietnamese broths.",
+                vi: "Nhung to nuoc nong voi rau thom, gia, thit mem va nuoc dung Viet Nam dam da."
+            },
+            items: [
+                ["Special Beef Pho", "$21", "Pho bo dac biet"],
+                ["Beef & Beef Ball Pho", "$20", "Pho bo va bo vien"],
+                ["Chicken Pho", "$20", "Pho ga"],
+                ["Vegetarian Pho", "$20", "Pho chay"],
+                ["Bun Bo Hue", "$21", "Bun bo Hue"],
+                ["BBQ Pork & Wontons Egg Noodle Soup", "$18", "Mi hoanh thanh xa xiu"],
+                ["Crispy Pork & BBQ Pork Egg Noodle Soup", "$20", "Mi heo quay va xa xiu"],
+                ["Fried Wontons & BBQ Pork Dry Egg Noodles", "$18", "Mi kho hoanh thanh chien va xa xiu"]
+            ]
         },
         {
             slug: "banh-mi",
             icon: "fa-pepper-hot",
             image: "images/banh mi.jpeg",
-            name: { en: "Vietnamese Banh Mi", vi: "Banh mi Viet Nam" },
-            intro: { en: "Crispy rolls, savoury meats, pickled veg, herbs and the house sauces people come back for.", vi: "Banh mi gion, thit dam da, do chua, rau thom va sot nha lam." },
-            items: [["Roasted Pork Banh Mi", "$15.60"], ["Lemongrass Chicken Banh Mi", "$14.50"], ["BBQ Pork Banh Mi", "$14.50"], ["Grilled Chicken Banh Mi", "$14.50"], ["Vietnamese Signature Banh Mi", "$15.60"], ["Grilled Pork Banh Mi", "$14.50"], ["Fried Rice", "$14.50"], ["Fried Noodles", "$14.50"]]
+            name: { en: "Banh Mi", vi: "Banh mi" },
+            intro: {
+                en: "Crisp Vietnamese baguettes with pate, mayo, pickles, herbs, chilli and your favourite filling.",
+                vi: "Banh mi Viet gion voi pate, bo, do chua, rau thom, ot va nhan ban yeu thich."
+            },
+            items: [
+                ["Classic Pork Banh Mi", "$10", "Banh mi thit nguoi truyen thong"],
+                ["Crispy Pork Banh Mi", "$10", "Banh mi heo quay"],
+                ["Gravy & Crispy Pork Banh Mi", "$10", "Banh mi heo quay sot gravy"],
+                ["Grilled Chicken Banh Mi", "$10", "Banh mi ga nuong"],
+                ["Bacon & Egg Banh Mi", "$10", "Banh mi thit xong khoi va trung"],
+                ["Grilled Pork Balls Banh Mi", "$10", "Banh mi nem nuong"],
+                ["Bo La Lot Banh Mi", "$10", "Banh mi bo la lot"],
+                ["Vegan Grilled Chicken Banh Mi", "$10", "Banh mi ga chay"],
+                ["Grilled Tofu Banh Mi", "$10", "Banh mi dau hu nuong"],
+                ["Mini Banh Mi Combo", "$18", "Combo banh mi mini"]
+            ]
         },
         {
-            slug: "vermicelli-salad-bowls",
-            icon: "fa-bowl-food",
-            image: "images/vermicelli bowl.avif",
-            name: { en: "Vermicelli Salad Bowls", vi: "Bun salad" },
-            intro: { en: "Fresh noodle bowls with grilled meats, salad, herbs and bright Vietnamese flavour.", vi: "To bun tuoi voi thit nuong, rau, rau thom va huong vi Viet Nam tuoi mat." },
-            items: [["Grilled Pork Noodle Salad Bowl", "$17.50"], ["Lemongrass Chicken Noodle Salad Bowl", "$17.50"], ["Grilled Chicken Noodle Salad Bowl", "$17.50"], ["Combination Noodle Salad Bowl", "$17.50"]]
-        },
-        {
-            slug: "rice-paper-rolls",
+            slug: "vermicelli-salad",
             icon: "fa-leaf",
             image: "images/rice paper.webp",
-            name: { en: "Rice Paper Rolls", vi: "Goi cuon" },
-            intro: { en: "Light, fresh rice paper rolls packed with protein, herbs and crisp vegetables.", vi: "Goi cuon nhe bung voi thit, rau thom va rau tuoi gion." },
-            items: [["Chicken & Avocado Rice Paper Rolls", "$11.00"], ["Pork And Prawns Rice Paper Rolls", "$11.00"], ["Lemongrass Chicken Rice Paper Rolls", "$11.00"], ["BBQ Pork Rice Paper Rolls", "$11.00"], ["Grilled Chicken Rice Paper Rolls", "$11.00"], ["Grilled Pork Rice Paper Rolls", "$11.00"]]
+            name: { en: "Vermicelli Salad", vi: "Bun salad" },
+            intro: {
+                en: "Fresh vermicelli noodle salads with herbs, crisp vegetables, peanuts and nuoc cham.",
+                vi: "Bun tuoi voi rau thom, rau gion, dau phong va nuoc cham."
+            },
+            items: [
+                ["Beef Vermicelli Salad", "$15", "Bun bo salad"],
+                ["Pork Vermicelli Salad", "$15", "Bun heo salad"],
+                ["Chicken Vermicelli Salad", "$15", "Bun ga salad"],
+                ["Vegan Chicken Vermicelli Salad", "$15", "Bun ga chay salad"],
+                ["Crispy Roast Pork Vermicelli Salad", "$20", "Bun heo quay salad"]
+            ]
         },
         {
-            slug: "salad-rolls",
-            icon: "fa-seedling",
-            image: "images/pastry array.png",
-            name: { en: "Salad Rolls", vi: "Banh mi salad" },
-            intro: { en: "Classic salad rolls made fresh with ham or chicken.", vi: "Banh mi salad lam moi voi ham hoac ga." },
-            items: [["Ham Salad Roll", "$13.00"], ["Chicken Salad Roll", "$13.00"]]
+            slug: "rice-dishes",
+            icon: "fa-bowl-rice",
+            image: "images/banh_mi.jpg",
+            name: { en: "Rice Dishes", vi: "Com dia" },
+            intro: {
+                en: "Hearty rice plates with grilled meats, pickled vegetables, fried egg and savoury house sauces.",
+                vi: "Com dia no bung voi thit nuong, do chua, trung chien va sot nha lam dam da."
+            },
+            items: [
+                ["Pork Chop Rice", "$18", "Com suon"],
+                ["Crispy Chicken Rice", "$20", "Com ga gion"],
+                ["Grilled Lemongrass Chicken Rice", "$20", "Com ga nuong sa"],
+                ["Crispy Pork Rice", "$20", "Com heo quay"],
+                ["Braised Pork Belly & Egg Rice", "$18", "Com thit kho trung"],
+                ["Stir Fried Beef & Rice", "$20", "Com bo luc lac"],
+                ["Add Mini Banh Mi", "$5", "Them banh mi mini"],
+                ["Add Fried Egg", "$3", "Them trung chien"]
+            ]
         },
         {
-            slug: "sandwiches",
-            icon: "fa-burger",
-            image: "images/wraps.webp",
-            name: { en: "Sandwiches", vi: "Sandwich" },
-            intro: { en: "Simple, fresh sandwiches for an easy bakery lunch.", vi: "Sandwich tuoi ngon, don gian cho bua trua nhanh." },
-            items: [["Chicken, Cheese And Lettuce Sandwich", "$9.80"], ["Eggs And Lettuce Sandwich", "$9.80"], ["Ham, Cheese And Tomato Sandwich", "$9.80"]]
-        },
-        {
-            slug: "hot-food",
-            icon: "fa-fire-flame-curved",
-            image: "images/pie array.png",
-            name: { en: "Hot Food", vi: "Mon nong" },
-            intro: { en: "Pies, sausage rolls, quiche, spring rolls and hot bakery classics.", vi: "Pie, sausage roll, quiche, cha gio va cac mon nong quen thuoc." },
-            items: [["Quiche Lorraine", "$8.50"], ["Smokey Dog", "$7.80"], ["Spinach And Feta", "$7.80"], ["Chunky Steak Pepper Pie", "$8.90"], ["Chunky Beef Curry Pie", "$8.90"], ["Mince & Veggie Pasty", "$7.80"], ["Chunky Steak Cheese Pie", "$8.90"], ["Roasted Pork Gravy Roll", "$13.00"], ["Vietnamese Pork Meatball Skewer", "$6.00"], ["Mini Quiche", "$4.50"], ["Curry Beef Minced", "$8.80"], ["Beef Minced And Cheese", "$8.80"], ["Steak, Tomato And Onion Pie", "$8.90"], ["Classic Beef Minced Pie", "$8.90"], ["Pork Spring Rolls", "$7.80"], ["Plain Sausage Roll", "$6.90"], ["Cheese Bacon Sausage Roll", "$7.50"], ["Mini Pie", "$4.50"], ["Steak, Cheese And Bacon Pie", "$8.90"], ["Potato Pie", "$9.75"], ["Quiche Vegetarian", "$8.50"], ["Plain Chunky Beef", "$8.80"], ["Chunky Steak Pie", "$8.90"], ["Curry Sausage Rolls", "$6.90"], ["Chunky Beef Bacon Pie", "$8.90"], ["Creamy Chicken And Vegetable Pie", "$8.80"], ["Chunky Beef Mushroom Pie", "$8.90"], ["Creamy Chicken Curry", "$8.80"], ["Steak Kidney Pie", "$8.90"], ["Sauce (BBQ or Tomato)", "$0.80"]]
-        },
-        {
-            slug: "slices",
-            icon: "fa-cake-candles",
-            image: "images/cake array.png",
-            name: { en: "Slices", vi: "Banh ngot cat mieng" },
-            intro: { en: "Cheesecakes, vanilla slices, lamingtons, tarts and sweet cabinet favourites.", vi: "Cheesecake, vanilla slice, lamington, tart va nhieu mon ngot hap dan." },
-            items: [["Caramel Cheesecake Slice", "$6.50"], ["Mock Cream Doughnut", "$7.00"], ["Mud Cake Slice", "$7.00"], ["Apple Slice", "$6.50"], ["Vanilla Slice", "$7.00"], ["Lemon Meringue Pie Slice", "$7.00"], ["Custard Tart Slice", "$7.00"], ["Strawberry Cheesecake Slice", "$7.00"], ["Apple Turnover Slice", "$7.80"], ["Caramel Slice", "$7.00"], ["Lamington With Cream Slice", "$7.00"], ["French Vanilla Slice", "$7.50"], ["Passion Fruit Cheesecake Slice", "$7.00"], ["Caramel Cheesecake", "$6.50"], ["Carrot Cake Slice", "$7.00"], ["Plain Lamington", "$4.50"], ["Fresh Cream Doughnut", "$7.00"]]
-        },
-        {
-            slug: "cakes",
-            icon: "fa-birthday-cake",
+            slug: "kids-menu",
+            icon: "fa-child-reaching",
             image: "images/cake.jpeg",
-            name: { en: "Cakes", vi: "Banh kem va banh lon" },
-            intro: { en: "Family pies, sponge cakes, Swiss rolls and celebration cakes.", vi: "Pie gia dinh, sponge cake, swiss roll va banh cho dip dac biet." },
-            items: [["Family Apple Pie", "$20.00"], ["Honey Swiss Roll Cake", "$14.50"], ["Carrot Cake Bar", "$16.50"], ["Apple Tea Cake", "$12.50"], ["Apple Pie", "$7.80"], ["Jam Swiss Roll Cake", "$14.50"], ["Black Forest Cake", "$45.00"], ["Mock Cream Vanilla Sponge Birthday Cake", "$45.00"], ["Chocolate Swiss Roll Cake", "$14.50"], ["Lemon Swiss Roll Cake", "$14.50"]]
+            name: { en: "Kids Menu", vi: "Thuc don tre em" },
+            intro: {
+                en: "Simple favourites for little diners, from nuggets and mini burgers to pancakes and babycinos.",
+                vi: "Cac mon de an cho be nhu ga vien, burger mini, pancake va babycino."
+            },
+            items: [
+                ["Chips & Nuggets", "$9", "Khoai chien va ga vien"],
+                ["Kids Pancakes", "$14", "Pancake tre em"],
+                ["Mini Cheeseburgers (2)", "$12", "Cheeseburger mini (2 cai)"],
+                ["Ham & Cheese Toastie", "$8", "Banh mi nuong jambon va pho mai"],
+                ["Babycino", "$3", "Babycino"],
+                ["Kids Milkshake", "$7", "Milkshake tre em"],
+                ["Kids Fresh Juice", "$6", "Nuoc ep tuoi tre em"],
+                ["Kids Omelette", "$12", "Trung op-let tre em"]
+            ]
         },
         {
-            slug: "drinks",
-            icon: "fa-bottle-water",
-            image: "images/coffee 2.jpg",
-            name: { en: "Drinks", vi: "Do uong" },
-            intro: { en: "Cold drinks, iced tea, energy drinks, flavoured milk and bottled favourites.", vi: "Nuoc lanh, tra dao/chanh, nuoc tang luc, sua huong vi va do uong dong chai." },
-            items: [["Canned Soft Drink", "$3.50"], ["Can Of Coke", "$3.50"], ["Red Fanta Bottle 600ml", "$6.80"], ["Can Of Coke No Sugar", "$3.50"], ["700ml Dare Iced Coffee", "$7.50"], ["Large Monster Can", "$6.50"], ["Bottle Of Coke No Sugar 600ml", "$6.80"], ["Peach / Lemon Iced Tea", "$6.50"], ["Soft Drink 600ml", "$6.80"], ["500ml Dare Iced Coffee / Chocolate Milk / Strawberry Milk", "$6.80"], ["Large V Can", "$7.80"], ["Bottle Of Coke 600ml", "$6.80"]]
-        },
-        {
-            slug: "coffee",
-            icon: "fa-mug-hot",
-            image: "images/coffee 4.webp",
-            name: { en: "Hot Coffee", vi: "Ca phe" },
-            intro: { en: "Hot coffee, iced latte and Vietnamese iced coffee for the morning run.", vi: "Ca phe nong, iced latte va ca phe sua da cho buoi sang." },
-            items: [["Latte", "$6.50"], ["Vietnamese Iced Coffee", "$7.90"], ["Cappuccino", "$6.50"], ["Flat White", "$6.50"], ["Iced Latte", "$7.50"], ["Long Black", "$6.50"]]
+            slug: "dog-menu",
+            icon: "fa-paw",
+            image: "images/opening.jpg",
+            name: { en: "Dog Menu", vi: "Thuc don cho cun" },
+            intro: {
+                en: "Pet-friendly treats for four-legged visitors joining you at the cafe.",
+                vi: "Mon an than thien cho cac ban cun ghe cafe cung ban."
+            },
+            items: [
+                ["Puppucino", "$4", "Puppucino"],
+                ["Pup Pho", "$8", "Pho cho cun"],
+                ["Pupsicle", "$5", "Kem que cho cun"]
+            ]
         }
     ],
     translations: {
@@ -107,116 +215,118 @@ window.BAKEHOUSE_MENU = {
             "nav.location": "Location",
             "nav.order": "Order",
             "nav.call": "Call",
-            "nav.callAria": "Call Logan Reserve Bakehouse",
-            "hero.badge": "Open 7 Days a Week",
-            "hero.title": "The Bakehouse",
-            "hero.titleAccent": "of Logan Reserve",
-            "hero.copy": "From crispy Vietnamese banh mi to golden pies, pastries, cakes and hot coffee, Logan Reserve Bakehouse is the Logan Reserve stop for good food.",
+            "nav.callAria": "Call V's Viet Cafe",
+            "hero.badge": "Open 7 days in Marsden",
+            "hero.title": "V's Viet Cafe",
+            "hero.titleAccent": "Marsden on Fifth",
+            "hero.copy": "Authentic Vietnamese comfort food, smooth coffee and family-friendly cafe favourites in the heart of Marsden.",
             "hero.menuCta": "Explore Menu",
             "hero.orderCta": "Order Online",
-            "updates.title": "Latest Updates",
-            "updates.copy": "Synced with our facebook page.",
+            "updates.title": "Fresh From V's",
+            "updates.copy": "The dishes locals come in for: banh mi, pho, vermicelli salads and coffee.",
             "updates.follow": "Follow us",
-            "updates.welcome": "Welcome to Logan Reserve Bakehouse",
-            "updates.labour": "We are opened from 6am-6pm on Labour Day. See you then \ud83d\ude0d.",
-            "updates.anzac": "We are opened from 6AM-6PM on Anzac day. Lest We Forget \u2764\ufe0f\ud83c\udde6\ud83c\uddfa",
-            "updates.easter": "Easter Trading Hours. Happy Easter \ud83d\udc23",
+            "updates.welcome": "Crispy pork banh mi, rice paper rolls and coffee ready from morning.",
+            "updates.labour": "Pho, bun bo hue and noodle soups for a comforting lunch.",
+            "updates.anzac": "Fresh vermicelli salads with herbs, pickles, peanuts and nuoc cham.",
+            "updates.easter": "Cafe breakfasts, burgers, kids meals and pet-friendly treats.",
             "menu.eyebrow": "Pick a category",
             "menu.title": "Menu",
-            "menu.copy": "Plan, decide and order, starting with the 12 official Bakehouse categories below.",
+            "menu.copy": "Browse V's Vietnamese dishes, cafe breakfasts, barista drinks, kids options and share plates.",
             "menu.view": "View category",
             "menu.items": "items",
             "about.eyebrow": "About us",
-            "about.title": "A neighbourhood bakery with Vietnamese heart.",
-            "about.p1": "We make fresh banh mi, pies, pastries and bread daily, made for early mornings, lunch runs, and everything in between.",
-            "about.p2": "",
+            "about.title": "Vietnamese flavour, cafe comfort and genuine Marsden hospitality.",
+            "about.p1": "V's Viet Cafe brings authentic Vietnamese dishes and delicious coffee to Shop 8 at Marsden on Fifth. Drop in for a quick banh mi, a steaming bowl of pho, a fresh vermicelli salad or a relaxed breakfast with the family.",
+            "about.p2": "The menu balances bright herbs, crisp pickles, rich broths and familiar cafe favourites, with takeaway, delivery, catering-friendly plates and pet-friendly outdoor dining.",
             "location.title": "Visit Us",
-            "location.copy": "Find us in Logan Reserve Shopping Village with easy parking and fresh food ready every day.",
+            "location.copy": "Find us at Marsden on Fifth with easy parking, friendly service and online ordering through Uber Eats.",
             "location.addressLabel": "Address",
             "location.hoursLabel": "Opening Hours",
             "location.weekdays": "Monday - Friday",
-            "location.weekends": "Saturday - Sunday",
+            "location.saturday": "Saturday",
+            "location.sunday": "Sunday",
             "location.contactLabel": "Contact",
             "category.back": "Back to menu",
             "category.order": "Start an online order",
             "category.count": "Menu items",
             "order.eyebrow": "Online Order",
-            "order.title": "Order ahead for pickup",
-            "order.copy": "Use this form to prepare a regular pickup order or a larger catering request.",
+            "order.title": "Order V's Viet Cafe",
+            "order.copy": "Use Uber Eats for delivery and pickup, or call the cafe for catering, larger orders and special requests.",
             "order.back": "Back to home",
             "order.name": "Your name",
             "order.phone": "Phone number",
             "order.type": "Order type",
-            "order.typeRegular": "Regular pickup",
-            "order.typeCatering": "Bulk / catering",
+            "order.typeRegular": "Pickup request",
+            "order.typeCatering": "Catering / large order",
             "order.item": "Item or request",
             "order.quantity": "Quantity",
             "order.pickup": "Pickup time",
             "order.date": "Pickup date",
             "order.notes": "Notes",
-            "order.submit": "Submit order",
-            "order.placeholder": "e.g. 4 roasted pork banh mi, no chilli",
-            "order.notesPlaceholder": "Allergies, slicing, catering details or preferred pickup notes",
-            "order.message": "Thanks. SMS ordering will be connected soon, so this demo form has not sent anything yet."
+            "order.submit": "Prepare phone order",
+            "order.placeholder": "e.g. 4 crispy pork banh mi, 2 no chilli",
+            "order.notesPlaceholder": "Allergies, dietary notes, catering details or preferred pickup notes",
+            "order.message": "Thanks. Please call 0410 788 999 to confirm this order, or use Uber Eats for live online ordering."
         },
         vi: {
-            "nav.homeAria": "Ve trang chu Logan Reserve Bakehouse",
+            "nav.homeAria": "Ve trang chu",
             "nav.menu": "Thuc don",
             "nav.about": "Gioi thieu",
             "nav.location": "Dia chi",
             "nav.order": "Dat mon",
             "nav.call": "Goi",
-            "nav.callAria": "Goi Logan Reserve Bakehouse",
-            "hero.badge": "Mo cua 7 ngay moi tuan",
-            "hero.title": "Tiem banh",
-            "hero.titleAccent": "cua Logan Reserve",
-            "hero.copy": "Tu banh mi Viet Nam gion ngon den pie vang ruom, banh ngot, banh kem va ca phe nong, Logan Reserve Bakehouse la diem dung cua Logan Reserve cho mon an ngon.",
+            "nav.callAria": "Goi V's Viet Cafe",
+            "hero.badge": "Mo cua 7 ngay tai Marsden",
+            "hero.title": "V's Viet Cafe",
+            "hero.titleAccent": "Marsden on Fifth",
+            "hero.copy": "Mon Viet dam da, ca phe ngon va nhung mon cafe than thien cho gia dinh ngay trung tam Marsden.",
             "hero.menuCta": "Xem thuc don",
             "hero.orderCta": "Dat online",
-            "updates.title": "Tin moi nhat",
-            "updates.copy": "Dong bo voi trang Facebook cua chung toi.",
+            "updates.title": "Mon ngon tu V's",
+            "updates.copy": "Nhung mon khach dia phuong yeu thich: banh mi, pho, bun salad va ca phe.",
             "updates.follow": "Theo doi",
-            "updates.welcome": "Chao mung den Logan Reserve Bakehouse",
-            "updates.labour": "Chung toi mo cua tu 6am-6pm vao Labour Day. Hen gap ban \ud83d\ude0d.",
-            "updates.anzac": "Chung toi mo cua tu 6AM-6PM vao Anzac day. Lest We Forget \u2764\ufe0f\ud83c\udde6\ud83c\uddfa",
-            "updates.easter": "Gio mo cua dip Easter. Chuc mung Easter \ud83d\udc23",
+            "updates.welcome": "Banh mi heo quay, goi cuon va ca phe san sang tu buoi sang.",
+            "updates.labour": "Pho, bun bo Hue va mi nuoc am long cho bua trua.",
+            "updates.anzac": "Bun salad tuoi voi rau thom, do chua, dau phong va nuoc cham.",
+            "updates.easter": "Bua sang cafe, burger, mon tre em va mon cho cun.",
             "menu.eyebrow": "Chon danh muc",
             "menu.title": "Thuc don",
-            "menu.copy": "Len ke hoach, chon mon va dat hang, bat dau voi 12 danh muc chinh thuc cua Bakehouse ben duoi.",
+            "menu.copy": "Xem cac mon Viet, bua sang cafe, do uong pha may, mon tre em va mon chia se cua V's.",
             "menu.view": "Xem danh muc",
             "menu.items": "mon",
             "about.eyebrow": "Ve chung toi",
-            "about.title": "Tiem banh dia phuong voi huong vi Viet Nam.",
-            "about.p1": "Chung toi lam banh mi Viet Nam, pie, banh ngot va banh mi tuoi moi ngay, danh cho buoi sang som, bua trua nhanh va moi khoang thoi gian o giua.",
-            "about.p2": "",
+            "about.title": "Huong vi Viet, cam giac cafe am cung va su hiếu khach cua Marsden.",
+            "about.p1": "V's Viet Cafe mang mon Viet chuan vi va ca phe ngon den Shop 8 tai Marsden on Fifth. Ghe qua de an nhanh mot o banh mi, mot to pho nong, bun salad tuoi hoac bua sang thong tha cung gia dinh.",
+            "about.p2": "Thuc don ket hop rau thom, do chua gion, nuoc dung dam da va cac mon cafe quen thuoc, phu hop mua mang di, giao hang, dat tiec nho va ngoi ngoai cung thu cung.",
             "location.title": "Ghe tham chung toi",
-            "location.copy": "Tiem nam trong Logan Reserve Shopping Village, de dau xe va co do an tuoi moi ngay.",
+            "location.copy": "Tim chung toi tai Marsden on Fifth voi cho dau xe tien loi, phuc vu than thien va dat mon online qua Uber Eats.",
             "location.addressLabel": "Dia chi",
             "location.hoursLabel": "Gio mo cua",
             "location.weekdays": "Thu Hai - Thu Sau",
-            "location.weekends": "Thu Bay - Chu Nhat",
+            "location.saturday": "Thu Bay",
+            "location.sunday": "Chu Nhat",
             "location.contactLabel": "Lien he",
             "category.back": "Ve thuc don",
-            "category.order": "Dat truoc",
+            "category.order": "Dat online",
             "category.count": "So mon",
             "order.eyebrow": "Dat online",
-            "order.title": "Dat mon truoc de den lay",
-            "order.copy": "Dung mau nay cho don lay nhanh hoac don lon/catering. Hien tai mau chi la ban demo cho den khi ket noi SMS.",
+            "order.title": "Dat mon V's Viet Cafe",
+            "order.copy": "Dung Uber Eats de giao hang hoac den lay, hoac goi quan cho don catering, don lon va yeu cau dac biet.",
             "order.back": "Ve trang chu",
             "order.name": "Ten cua ban",
             "order.phone": "So dien thoai",
             "order.type": "Loai don",
-            "order.typeRegular": "Don thuong",
-            "order.typeCatering": "Don lon / catering",
+            "order.typeRegular": "Don den lay",
+            "order.typeCatering": "Catering / don lon",
             "order.item": "Mon hoac yeu cau",
             "order.quantity": "So luong",
             "order.pickup": "Gio den lay",
             "order.date": "Ngay den lay",
             "order.notes": "Ghi chu",
-            "order.submit": "Gui don",
-            "order.placeholder": "VD: 4 banh mi heo quay, khong ot",
-            "order.notesPlaceholder": "Di ung, cat banh, chi tiet catering hoac ghi chu pickup",
-            "order.message": "Cam on. Chuc nang SMS se duoc ket noi sau, nen mau demo nay chua gui di."
+            "order.submit": "Chuan bi don qua dien thoai",
+            "order.placeholder": "VD: 4 banh mi heo quay, 2 cai khong ot",
+            "order.notesPlaceholder": "Di ung, ghi chu an kieng, chi tiet catering hoac gio den lay",
+            "order.message": "Cam on. Vui long goi 0410 788 999 de xac nhan don nay, hoac dung Uber Eats de dat online."
         }
     }
 };

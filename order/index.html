@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Order | Logan Reserve Bakehouse</title>
-    <meta name="description" content="Online Order for pickup, bulk and catering requests from Logan Reserve Bakehouse.">
+    <title>Online Order | V's Viet Cafe</title>
+    <meta name="description" content="Order V's Viet Cafe for delivery, pickup, catering and large Vietnamese food orders in Marsden.">
     <link rel="icon" href="../images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +16,18 @@
     <nav class="nav">
         <div class="nav-inner">
             <a href="../" class="nav-logo">
-                <img src="../images/favicon.png" alt="Logan Reserve Bakehouse Logo" class="nav-logo-img">
-                <span>Logan Reserve <strong>Bakehouse</strong></span>
+                <img src="../images/favicon.png" alt="V's Viet Cafe logo" class="nav-logo-img">
+                <span>V's Viet <strong>Cafe</strong></span>
             </a>
             <div class="nav-actions">
                 <button class="language-toggle" type="button" data-lang-toggle aria-label="Switch language">
                     <span data-lang-current>EN</span>
                     <i class="fa-solid fa-language"></i>
                 </button>
-                <a href="tel:+61734167399" class="nav-action nav-action--phone">
+                <a href="https://www.ubereats.com/au/store/vs-viet-cafe/b4be8e3c-da46-5a2c-8f47-e8144cba4feb" target="_blank" rel="noopener" class="nav-action nav-action--uber" aria-label="Order V's Viet Cafe on Uber Eats">
+                    <img src="../images/ubereats.svg" alt="" class="nav-action-logo nav-action-logo--uber">
+                </a>
+                <a href="tel:+61410788999" class="nav-action nav-action--phone">
                     <i class="fa-solid fa-phone"></i>
                     <span data-i18n="nav.call">Call</span>
                 </a>
@@ -40,7 +43,18 @@
                     <span data-i18n="order.back">Back to home</span>
                 </a>
                 <p class="eyebrow" data-i18n="order.eyebrow">Online Order</p>
-                <h1 class="section-title" data-i18n="order.title">Order ahead for pickup</h1>
+                <h1 class="section-title" data-i18n="order.title">Order V's Viet Cafe</h1>
+                <p class="section-lead" data-i18n="order.copy">Use Uber Eats for delivery and pickup, or call the cafe for catering, larger orders and special requests.</p>
+                <div class="hero-actions order-actions">
+                    <a href="https://www.ubereats.com/au/store/vs-viet-cafe/b4be8e3c-da46-5a2c-8f47-e8144cba4feb" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                        <span>Uber Eats</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    <a href="tel:+61410788999" class="btn btn-outline btn-lg">
+                        <span>0410 788 999</span>
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
             </div>
 
             <div class="order-card">
@@ -57,8 +71,8 @@
                         <div class="form-field">
                             <label for="orderType" data-i18n="order.type">Order type</label>
                             <select id="orderType" name="orderType">
-                                <option data-i18n="order.typeRegular">Regular pickup</option>
-                                <option data-i18n="order.typeCatering">Bulk / catering</option>
+                                <option data-i18n="order.typeRegular">Pickup request</option>
+                                <option data-i18n="order.typeCatering">Catering / large order</option>
                             </select>
                         </div>
                         <div class="form-field">
@@ -67,7 +81,7 @@
                         </div>
                         <div class="form-field form-field--full">
                             <label for="orderItem" data-i18n="order.item">Item or request</label>
-                            <textarea id="orderItem" name="orderItem" required data-i18n-placeholder="order.placeholder" placeholder="e.g. 4 roasted pork banh mi, no chilli"></textarea>
+                            <textarea id="orderItem" name="orderItem" required data-i18n-placeholder="order.placeholder" placeholder="e.g. 4 crispy pork banh mi, 2 no chilli"></textarea>
                         </div>
                         <div class="form-field">
                             <label for="pickupDate" data-i18n="order.date">Pickup date</label>
@@ -79,11 +93,11 @@
                         </div>
                         <div class="form-field form-field--full">
                             <label for="orderNotes" data-i18n="order.notes">Notes</label>
-                            <textarea id="orderNotes" name="orderNotes" data-i18n-placeholder="order.notesPlaceholder" placeholder="Allergies, slicing, catering details or preferred pickup notes"></textarea>
+                            <textarea id="orderNotes" name="orderNotes" data-i18n-placeholder="order.notesPlaceholder" placeholder="Allergies, dietary notes, catering details or preferred pickup notes"></textarea>
                         </div>
                     </div>
                     <button class="btn btn-primary btn-lg" type="submit">
-                        <span data-i18n="order.submit">Submit order</span>
+                        <span data-i18n="order.submit">Prepare phone order</span>
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>
                     <p class="order-message" id="orderMessage" hidden></p>
@@ -96,3 +110,4 @@
     <script src="../site.js"></script>
 </body>
 </html>
+
