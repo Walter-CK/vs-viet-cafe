@@ -3,7 +3,7 @@ window.VS_VIET_MENU = {
         {
             slug: "drinks",
             icon: "fa-mug-hot",
-            image: "images/coffee 4.webp",
+            image: "images/coffee.png",
             name: { en: "Drinks & Coffee", vi: "Do uong va ca phe" },
             intro: {
                 en: "Barista coffee, Vietnamese-style iced drinks, frappes, fresh juices, iced teas and cold favourites.",
@@ -30,7 +30,7 @@ window.VS_VIET_MENU = {
         {
             slug: "all-day-breakfast",
             icon: "fa-egg",
-            image: "images/coffee.jpg",
+            image: "images/breakfast.png",
             name: { en: "All Day Breakfast", vi: "Bua sang ca ngay" },
             intro: {
                 en: "Cafe breakfast favourites for early starts, school-run coffees and slow weekend mornings.",
@@ -54,7 +54,7 @@ window.VS_VIET_MENU = {
         {
             slug: "cafe-lunch",
             icon: "fa-burger",
-            image: "images/sandwiches.png",
+            image: "images/array.jpeg",
             name: { en: "Cafe Lunch", vi: "Bua trua cafe" },
             intro: {
                 en: "Burgers, steak sandwiches, toasted open sandwiches, chips and easy plates for a casual lunch.",
@@ -75,7 +75,7 @@ window.VS_VIET_MENU = {
         {
             slug: "entree-sharing",
             icon: "fa-utensils",
-            image: "images/plateu.jpg",
+            image: "images/entree.png",
             name: { en: "Entree & Sharing", vi: "Khai vi va mon chia se" },
             intro: {
                 en: "Spring rolls, rice paper rolls, grilled skewers and tasting plates made for sharing.",
@@ -95,7 +95,7 @@ window.VS_VIET_MENU = {
         {
             slug: "pho-noodle-soups",
             icon: "fa-bowl-food",
-            image: "images/vermicelli bowl.avif",
+            image: "images/pho-noodle-soup.jpg",
             name: { en: "Pho & Noodle Soups", vi: "Pho va mi nuoc" },
             intro: {
                 en: "Steaming bowls with herbs, bean sprouts, tender meats and rich Vietnamese broths.",
@@ -115,7 +115,7 @@ window.VS_VIET_MENU = {
         {
             slug: "banh-mi",
             icon: "fa-pepper-hot",
-            image: "images/banh mi.jpeg",
+            image: "images/banh mi.jpg",
             name: { en: "Banh Mi", vi: "Banh mi" },
             intro: {
                 en: "Crisp Vietnamese baguettes with pate, mayo, pickles, herbs, chilli and your favourite filling.",
@@ -137,7 +137,7 @@ window.VS_VIET_MENU = {
         {
             slug: "vermicelli-salad",
             icon: "fa-leaf",
-            image: "images/rice paper.webp",
+            image: "images/vermicelli.jpg",
             name: { en: "Vermicelli Salad", vi: "Bun salad" },
             intro: {
                 en: "Fresh vermicelli noodle salads with herbs, crisp vegetables, peanuts and nuoc cham.",
@@ -154,7 +154,7 @@ window.VS_VIET_MENU = {
         {
             slug: "rice-dishes",
             icon: "fa-bowl-rice",
-            image: "images/banh_mi.jpg",
+            image: "images/rice-dish.jpg",
             name: { en: "Rice Dishes", vi: "Com dia" },
             intro: {
                 en: "Hearty rice plates with grilled meats, pickled vegetables, fried egg and savoury house sauces.",
@@ -174,7 +174,7 @@ window.VS_VIET_MENU = {
         {
             slug: "kids-menu",
             icon: "fa-child-reaching",
-            image: "images/cake.jpeg",
+            image: "images/breakfast.png",
             name: { en: "Kids Menu", vi: "Thuc don tre em" },
             intro: {
                 en: "Simple favourites for little diners, from nuggets and mini burgers to pancakes and babycinos.",
@@ -194,7 +194,7 @@ window.VS_VIET_MENU = {
         {
             slug: "dog-menu",
             icon: "fa-paw",
-            image: "images/opening.jpg",
+            image: "images/dog.png",
             name: { en: "Dog Menu", vi: "Thuc don cho cun" },
             intro: {
                 en: "Pet-friendly treats for four-legged visitors joining you at the cafe.",
